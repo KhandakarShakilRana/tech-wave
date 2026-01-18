@@ -13,8 +13,13 @@
 </head>
 <body class="bg-[#1A0B2E] font-[Inter]">
    <header>
-    <nav class="flex justify-between items-center m-auto my-[30px] max-w-[1200px]">
-        <img src="assets/TechWave.png" alt="">
+    <div class="p-6 flex justify-between items-center m-auto my-[30px] max-w-[1200px] bg-[#1A0B2E] sm:hidden">
+         <img class="h-5" src="assets/TechWave.png" alt="">
+         <img src="assets/hamburger-menu.png" alt="">
+    </div>
+    <div class="hidden sm:block">
+        <nav class="flex justify-between items-center m-auto my-[30px] max-w-[1200px] bg-[#1A0B2E]">
+        <img class="" src="assets/TechWave.png" alt="">
         <ul class="flex text-[16px] text-white cursor-pointer">
             <li class="mr-8">About</li>
             <li>Episodes</li>
@@ -29,13 +34,15 @@
                hover:via-[rgba(255,0,200,1)]
                hover:to-[rgba(120,0,220,1)]">Subscribe<img src="assets/ArrowRight.png" alt="" class="ml-2 w-full h-full"></button>
     </nav>
+    </div>
 
     <div class="flex flex-col items-center text-center bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover bg-center ">
-        <div class="mt-[110px] mb-10 bg-[url(assets/hero-circle.png)] w-[350px] h-[350px] bg-no-repeat m-auto flex justify-center items-center">
+        <div class="relative mt-[110px] mb-10 bg-[url(assets/hero-circle.png)] w-[350px] h-[350px] bg-no-repeat m-auto flex justify-center items-center">
             <img class="w-[116px] h-[175px] " src="assets/microphone.png" alt="">
+            <button class="absolute top-5 right-13 bg-[#00FF88] px-3 py-2 rounded-3xl text-black font-bold">New</button>
         </div>
         <div>
-            <h2 class="text-[60px] font-bold text-white mb-2">TechWave</h2>
+            <h2 class="sm:text-[60px] text-[40px] font-bold text-white mb-2">TechWave</h2>
             <p class="text-[16px] mb-6 text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
         </div>
             <div class="flex gap-4 mt-6 text-[16px] mb-[100px]">
@@ -46,7 +53,7 @@
                to-[rgba(145,0,248,1)]
                hover:from-[rgba(255,200,0,1)]
                hover:via-[rgba(255,0,200,1)]
-               hover:to-[rgba(120,0,220,1)]"><img src="assets/spotify.png" alt="" class="mr-4"> Listen on Spotify</button>
+               hover:to-[rgba(120,0,220,1)] cursor-pointer"><img src="assets/spotify.png" alt="" class="mr-4"> Listen on Spotify</button>
                 <button class="flex justify-center items-center px-[25px] py-3 rounded-[1000px] border border-[#00FF88] text-[#00FF88] font-semibold"><img src="assets/message.png" alt="" class="mr-4"> Subscribe</button>
             </div>
     </div>
@@ -54,16 +61,15 @@
 
    <!-- about the section  -->
    <section class="max-w-[1200px] text-center m-auto" >
-    <!-- about the podcast -->
      <div class="">
-        <h2 class="text-[48px] text-white font-bold mt-[50px] mb-4">About the Podcast</h2>
+        <h2 class="text-[32px] sm:text-[48px] text-white font-bold sm:mt-[50px] sm:mb-4">About the Podcast</h2>
         <p class="text-[16px] text-white mb-10 font-extralight">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
 We break down complex topics into digestible insights, explore productivity strategies that actually work,
 and share stories of personal growth from industry leaders.</p>
 <p class="text-[16px] text-white mb-20 font-extralight">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
      </div>
-     <!-- rating section  -->
-      <div class="flex justify-between mb-[120px]">
+
+      <div class="grid grid-cols-2 gap-4 mb-10 sm:flex sm:justify-between sm:mb-[120px]">
         <div>
             <h1 class="text-[48px] font-bold text-[#00FF88] mb-0.1">150K+</h1>
             <h1 class="text-[16px] text-white font-extralight">Monthly Listeners</h1>
@@ -83,14 +89,13 @@ and share stories of personal growth from industry leaders.</p>
       </div>
 
    </section>
-<!-- about the section  -->
 
-<!-- why choose us section  -->
+
 <section class="bg-[#35116566]">
     <div class="max-w-[1200px] m-auto mt-[120px]">
-        <h2 class="text-center text-[48px] font-bold text-white mb-10 pt-10">Why Choose TechWave</h2>
+        <h2 class="text-[32px] text-center sm:text-[48px] font-bold text-white mb-10 pt-10">Why Choose TechWave</h2>
 
-    <div class="grid grid-cols-3 grid-rows-3 gap-6 pb-[120px]">
+    <div class="m-4 flex flex-col gap-5 sm:grid sm:grid-cols-3 sm:grid-rows-3 sm:gap-6 sm:pb-[120px]">
         <div class="p-10 bg-[#35116566] rounded-4xl row-span-2 flex flex-col justify-center ">
             <img class="my-4 w-[60px]" src="assets/headphone.png" alt="">
             <h1 class="font-bold text-white text-[24px] my-4">Premium Audio Quality</h1>
@@ -119,14 +124,12 @@ and share stories of personal growth from industry leaders.</p>
     </div>
     </div>
 </section>
-<!-- why choose us section  -->
 
-<!-- Featured Episodes  -->
 
-<section class="max-w-[1200px] m-auto py-[120px]">
-    <h2 class="font-bold text-white text-[46px] mb-10 text-center">Featured Episodes</h2>
-    <!-- youtube links  -->
-     <div class="flex justify-between">
+
+<section class="max-w-[1200px] m-auto py-[60px] sm:py-[60px]">
+    <h2 class=" text-[32px] font-bold text-white sm:text-[46px] mb-10 text-center">Featured Episodes</h2>
+     <div class="flex flex-col justify-center items-center gap-10 m-5 sm:flex-row sm:justify-between">
         <div class="max-w-[380px]">
         <iframe class="w-full rounded-t-4xl h-54" src="https://www.youtube.com/embed/vJWzH_2F64g?si=kamfHpl0FujBSif9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="p-6 h-85 flex flex-col justify-between bg-[#250D44] rounded-b-4xl">
@@ -155,35 +158,32 @@ He will be adding robotics, IOT and  fun projects for this channel.</p>
         </div>
      </div>
      </div>
-    <!-- youtube links  -->
-
-
 </section>
-<!-- Featured Episodes  -->
 
-<!-- Meet The host  -->
- <section class="max-w-[1200px] m-auto py-[120px]">
-    <h2 class="font-bold text-[48px] text-white text-center mb-10">Meet The Host</h2>
-    <div class="p-10 flex items-center bg-[#35116566] rounded-4xl">
-        <img src="assets/host.png" alt="">
-        <div class="ml-10">
-            <h1 class="font-bold text-white text-[32px] mb-4">Alex Kumar</h1>
+
+
+ <section class="max-w-[1200px] m-auto py-[60px] sm:py-[60px]">
+    <h2 class="font-bold text-[32px] sm:text-[48px] text-white text-center sm:mb-10 mb-5">Meet The Host</h2>
+    <div class=" p-5 sm:p-10 flex flex-col items-center sm:flex-row text-center sm:text-left sm:items-center bg-[#35116566] rounded-4xl">
+        <img class="" src="assets/host.png" alt="">
+       <div class="flex flex-col items-start">
+         <div class="sm:ml-10">
+            <h1 class="font-bold text-white text-[32px] sm:mb-4">Alex Kumar</h1>
             <p class="font-light text-white text-[16px] my-4">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-            <div class="flex items-center gap-4">
+        </div>
+         <div class="flex m-auto justify-center items-center gap-4 sm:ml-10">
                  <a class="w-10 h-10 border border-[#533C72] rounded-4xl flex items-center justify-center" href=""><img src="assets/linkedin.png" alt=""></a>
                  <a class="w-10 h-10 border border-[#533C72] rounded-4xl flex items-center justify-center" href=""><img src="assets/x.png" alt=""></a>
                  <a class="w-10 h-10 border border-[#533C72] rounded-4xl flex items-center justify-center" href=""><img src="assets/instagram.png" alt=""></a>
                  <a class="w-10 h-10 border border-[#533C72] rounded-4xl flex items-center justify-center" href=""><img src="assets/youtube.png" alt=""></a>
-                </div>
-
         </div>
+       </div>
     </div>
  </section>
 
- <!-- footer section  -->
   <footer class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover bg-center w-full h-full p-[120px]">
-    <img class="h-[60px] mb-[60px] m-auto" src="assets/TechWave.png" alt="">
-    <div class="flex max-w-[466px] m-auto justify-between text-white font-semibold gap-3">
+    <img class="h-8 sm:h-[60px] mb-[60px] m-auto" src="assets/TechWave.png" alt="">
+    <div class="grid grid-cols-2 sm:flex  max-w-[466px] m-auto sm:justify-between text-white font-semibold gap-3 text-[10px] sm:text-[16px]">
         <div class="flex justify-center items-center gap-3 cursor-pointer">
             <img src="assets/spotify.png" alt="">
             <h1>Spotify</h1>
@@ -203,9 +203,9 @@ He will be adding robotics, IOT and  fun projects for this channel.</p>
 
         
     </div>
-    <p class="font-light text-white text-center mt-10">© 2026 TechWave Podcast. All rights reserved.</p>
+    <p class="font-light text-white text-center mt-10 text-[10px] sm:text-16px">© 2026 TechWave Podcast. All rights reserved.</p>
   </footer>
- <!-- footer section  -->
+
 
 </body>
 </html>
