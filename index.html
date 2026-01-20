@@ -13,12 +13,12 @@
 </head>
 <body class="bg-[#1A0B2E] font-[Inter]">
    <header>
-    <div class="p-6 flex justify-between items-center m-auto my-[30px] max-w-[1200px] bg-[#1A0B2E] sm:hidden">
+    <div class=" p-4 sm:p-6 flex justify-between items-center m-auto mb-2.5 max-w-[1200px] bg-[#110620] sm:hidden">
          <img class="h-5" src="assets/TechWave.png" alt="">
          <img src="assets/hamburger-menu.png" alt="">
     </div>
-    <div class="hidden sm:block">
-        <nav class="flex justify-between items-center m-auto my-[30px] max-w-[1200px] bg-[#1A0B2E]">
+    <div class="hidden sm:block py-2">
+        <nav class="flex justify-between items-center m-auto my-[30px] max-w-[1200px] ">
         <img class="" src="assets/TechWave.png" alt="">
         <ul class="flex text-[16px] text-white cursor-pointer">
             <li class="mr-8">About</li>
@@ -36,10 +36,10 @@
     </nav>
     </div>
 
-    <div class="flex flex-col items-center text-center bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover bg-center ">
-        <div class="relative mt-[60px] sm:mt-[110px] mb-10 bg-[url(assets/hero-circle.png)] w-[350px] h-[350px] bg-no-repeat m-auto flex justify-center items-center">
-            <img class="w-[116px] h-[175px] " src="assets/microphone.png" alt="">
-            <button class="absolute top-5 right-13 bg-[#00FF88] px-3 py-2 rounded-3xl text-black font-bold animate-pulse">New</button>
+    <div class="flex flex-col items-center text-center bg-[url(assets/hero-bg.png)] bg-no-repeat sm:bg-cover bg-center ">
+        <div class="relative mt-[60px] sm:mt-[110px] mb-10 bg-[url(assets/hero-circle.png)] w-[250px] h-[250px] bg-cover sm:w-[350px] sm:h-[350px] bg-no-repeat m-auto flex justify-center items-center">
+            <img class="h-[135px] sm:w-[116px] sm:h-[175px] " src="assets/microphone.png" alt="">
+            <button class="absolute top-2 right-6 sm:top-5 sm:right-13 bg-[#00FF88] px-3 py-2 rounded-3xl text-black font-bold animate-pulse">New</button>
         </div>
         <div>
             <h2 class="sm:text-[60px] text-[40px] font-bold text-white mb-2">TechWave</h2>
@@ -54,7 +54,7 @@
                hover:from-[rgba(255,200,0,1)]
                hover:via-[rgba(255,0,200,1)]
                hover:to-[rgba(120,0,220,1)] cursor-pointer"><img src="assets/spotify.png" alt="" class="mr-4"> Listen on Spotify</button>
-                <button class="mr-6 text-[13px] sm:text-[16px] flex justify-center items-center px-[15px] py-1 sm:px-[25px] sm:py-3 rounded-[1000px] border border-[#00FF88] text-[#00FF88] font-semibold"><img src="assets/message.png" alt="" class="mr-4"> Subscribe</button>
+                <button class="mr-6 text-[13px] sm:text-[16px] flex justify-center items-center px-[15px] py-1 sm:px-[25px] sm:py-3 rounded-[1000px] border border-[#00FF88] text-[#00FF88] font-semibold hover:border-[#ffffff] hover:text-white"><img src="assets/message.png" alt="" class="mr-4"> Subscribe</button>
             </div>
     </div>
    </header>
@@ -127,10 +127,10 @@ and share stories of personal growth from industry leaders.</p>
 
 
 
-<section class="max-w-[1200px] m-auto py-[60px] sm:py-[60px]">
+<section class="max-w-[1200px] sm:m-auto py-[60px] sm:py-[60px] mx-4">
     <h2 class=" text-[32px] font-bold text-white sm:text-[46px] mb-10 text-center">Featured Episodes</h2>
-     <div class="flex flex-col justify-center items-center gap-10 m-5 sm:flex-row sm:justify-between">
-        <div class="max-w-[380px]">
+     <div class="flex flex-col justify-center items-center gap-10 my-5 sm:flex-row sm:justify-between">
+        <div class="sm:max-w-[380px]">
         <iframe class="w-full rounded-t-4xl h-54" src="https://www.youtube.com/embed/vJWzH_2F64g?si=kamfHpl0FujBSif9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="p-6 h-85 flex flex-col justify-between bg-[#250D44] rounded-b-4xl">
             <h1 class="font-bold text-[24px] text-white my-3">Create A Virtual Mouse Using 35 Lines of python</h1>
@@ -139,7 +139,7 @@ and share stories of personal growth from industry leaders.</p>
         <p class="flex items-center text-[#00FF88] font-bold "><img class="mr-2"  src="assets/clock.png" alt="">28.9</p>
         </div>
      </div>
-     <div class="max-w-[380px]">
+     <div class="sm:max-w-[380px]">
         <iframe class="w-full rounded-t-4xl h-54" src="https://www.youtube.com/embed/upxGJbHlws4?si=_7sYeXPXGgJSEddj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        <div class="p-6 h-85 flex flex-col justify-between bg-[#250D44] rounded-b-4xl">
          <h1 class="font-bold text-[24px] text-white my-3">Build an Automatic Irrigation System</h1>
@@ -147,7 +147,7 @@ and share stories of personal growth from industry leaders.</p>
         <p class="flex items-center text-[#00FF88] font-bold "><img class="mr-2" src="assets/clock.png" alt="">10.33</p>
        </div>
      </div>
-     <div class="max-w-[380px]">
+     <div class="sm:max-w-[380px]">
         <iframe class="w-full rounded-t-4xl h-54" src="https://www.youtube.com/embed/e87Z4yst8MI?si=8xAevoKrTvFtm5SB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="p-6 h-85 flex flex-col justify-between bg-[#250D44] rounded-b-4xl">
             <h1 class="font-bold text-[24px] text-white my-3">DIY Valentines day gift</h1>
@@ -181,9 +181,15 @@ He will be adding robotics, IOT and  fun projects for this channel.</p>
     </div>
  </section>
 
-  <footer class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover bg-center w-full h-full p-[120px]">
-    <img class="h-8 sm:h-[60px] mb-[60px] m-auto" src="assets/TechWave.png" alt="">
-    <div class="grid grid-cols-2 sm:flex  max-w-[466px] m-auto sm:justify-between text-white font-semibold gap-3 text-[10px] sm:text-[16px]">
+  <footer class="relative w-full min-h-[220px]">
+           <img
+    src="assets/footer-bg.png"
+    class="absolute inset-0 w-full h-full object-fill"
+    alt=""/>
+
+    <div class="relative z-10 py-[60px] sm:py-[120px]">
+        <img class="h-8 sm:h-[60px] mb-[60px] m-auto" src="assets/TechWave.png" alt="">
+    <div class="grid grid-cols-2 sm:flex  max-w-[166px] sm:max-w-[466px] m-auto sm:justify-between text-white font-semibold gap-3 text-[10px] sm:text-[16px]">
         <div class="flex justify-center items-center gap-3 cursor-pointer">
             <img src="assets/spotify.png" alt="">
             <h1>Spotify</h1>
@@ -204,6 +210,7 @@ He will be adding robotics, IOT and  fun projects for this channel.</p>
         
     </div>
     <p class="font-light text-white text-center mt-10 text-[10px] sm:text-16px">© 2026 TechWave Podcast. All rights reserved.</p>
+    </div>
   </footer>
 
 
